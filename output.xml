@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221118 17:53:04.063" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221118 20:16:25.590" rpa="false" schemaversion="3">
 <suite id="s1" name="Test Login" source="c:\Users\DAP &amp; Sun\Desktop\RobotframeworcPom\TestCases\Test_Login.robot">
-<test id="s1-t1" name="Test_login" line="10">
-<kw name="OpenBrow" library="LoginKeywords">
+<test id="s1-t1" name="Test_login" line="11">
+<kw name="Open_Brow" library="LoginKeywords">
+<arg>${url}</arg>
+<arg>${browser1}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url1}</arg>
-<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221118 17:53:04.964" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<status status="PASS" starttime="20221118 17:53:04.962" endtime="20221118 17:53:10.348"/>
+<msg timestamp="20221118 20:16:25.990" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20221118 20:16:25.989" endtime="20221118 20:16:31.003"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221118 17:53:10.349" endtime="20221118 17:53:10.474"/>
+<status status="PASS" starttime="20221118 20:16:31.004" endtime="20221118 20:16:31.133"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221118 17:53:13.476" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20221118 17:53:10.474" endtime="20221118 17:53:13.476"/>
+<msg timestamp="20221118 20:16:34.142" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221118 20:16:31.134" endtime="20221118 20:16:34.143"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:04.961" endtime="20221118 17:53:13.477"/>
+<status status="PASS" starttime="20221118 20:16:25.989" endtime="20221118 20:16:34.144"/>
 </kw>
 <kw name="EntreUsername" library="LoginKeywords">
 <arg>${user}</arg>
@@ -30,10 +30,10 @@
 <arg>${txt_usernameO}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221118 17:53:13.480" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20221118 17:53:13.479" endtime="20221118 17:53:13.574"/>
+<msg timestamp="20221118 20:16:34.149" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20221118 20:16:34.146" endtime="20221118 20:16:34.239"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:13.478" endtime="20221118 17:53:13.574"/>
+<status status="PASS" starttime="20221118 20:16:34.145" endtime="20221118 20:16:34.239"/>
 </kw>
 <kw name="EnterPass" library="LoginKeywords">
 <arg>${pass}</arg>
@@ -41,41 +41,41 @@
 <arg>${txt_passO}</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221118 17:53:13.576" level="INFO">Typing password into text field 'name:password'.</msg>
-<msg timestamp="20221118 17:53:13.624" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221118 17:53:13.692" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221118 17:53:13.575" endtime="20221118 17:53:13.692"/>
+<msg timestamp="20221118 20:16:34.241" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg timestamp="20221118 20:16:34.285" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221118 20:16:34.355" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221118 20:16:34.240" endtime="20221118 20:16:34.355"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:13.575" endtime="20221118 17:53:13.692"/>
+<status status="PASS" starttime="20221118 20:16:34.240" endtime="20221118 20:16:34.355"/>
 </kw>
 <kw name="ClickLogin" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${buttLoginO}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221118 17:53:13.694" level="INFO">Clicking button 'xpath://button'.</msg>
-<status status="PASS" starttime="20221118 17:53:13.694" endtime="20221118 17:53:13.771"/>
+<msg timestamp="20221118 20:16:34.358" level="INFO">Clicking button 'xpath://button'.</msg>
+<status status="PASS" starttime="20221118 20:16:34.357" endtime="20221118 20:16:34.434"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:13.693" endtime="20221118 17:53:13.771"/>
+<status status="PASS" starttime="20221118 20:16:34.356" endtime="20221118 20:16:34.434"/>
 </kw>
 <kw name="ValidSuccessLogin" library="LoginKeywords">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>OrangeHRM</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20221118 17:53:15.471" level="INFO">Page title is 'OrangeHRM'.</msg>
-<status status="PASS" starttime="20221118 17:53:13.773" endtime="20221118 17:53:15.472"/>
+<msg timestamp="20221118 20:16:35.487" level="INFO">Page title is 'OrangeHRM'.</msg>
+<status status="PASS" starttime="20221118 20:16:34.436" endtime="20221118 20:16:35.487"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:13.772" endtime="20221118 17:53:15.472"/>
+<status status="PASS" starttime="20221118 20:16:34.435" endtime="20221118 20:16:35.488"/>
 </kw>
 <kw name="ClosingBrowser" library="LoginKeywords">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221118 17:53:15.473" endtime="20221118 17:53:19.690"/>
+<status status="PASS" starttime="20221118 20:16:35.489" endtime="20221118 20:16:37.785"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:15.473" endtime="20221118 17:53:19.691"/>
+<status status="PASS" starttime="20221118 20:16:35.488" endtime="20221118 20:16:37.786"/>
 </kw>
-<status status="PASS" starttime="20221118 17:53:04.960" endtime="20221118 17:53:19.693"/>
+<status status="PASS" starttime="20221118 20:16:25.988" endtime="20221118 20:16:37.788"/>
 </test>
-<status status="PASS" starttime="20221118 17:53:04.077" endtime="20221118 17:53:19.698"/>
+<status status="PASS" starttime="20221118 20:16:25.597" endtime="20221118 20:16:37.794"/>
 </suite>
 <statistics>
 <total>

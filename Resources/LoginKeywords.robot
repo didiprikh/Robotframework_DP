@@ -4,8 +4,8 @@ Variables    ../PageObjects/Locators.py
 
 *** Keywords ***
 OpenBrow
-    [Arguments]    ${url1}    ${browser}
-    Open Browser    ${url1}    ${browser}
+    [Arguments]    ${url}    ${browser}
+    Open Browser    ${url}    ${browser}
     Maximize Browser Window
     Sleep    3
 EntreUsername
